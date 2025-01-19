@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import Header from './app/header'
+import Footer from './app/footer'
 
 // Bütün yapı App bileşeninde tanımlanmıştır.
 // App, Header ve Form bileşenlerini ayrı dosyalara ayırarak daha modüler bir yapı oluşturmanız bekleniyor.
@@ -27,9 +29,7 @@ export default function App() {
           width={500}
           height={500}
         />
-        <h2 className='mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900'>
-          Hesabınıza giriş yapın
-        </h2>
+      <Header/>
       </div>
 
       <div className='mt-10 sm:mx-auto sm:w-full sm:max-w-sm'>
@@ -92,15 +92,7 @@ export default function App() {
           </div>
         </form>
 
-        <p className='mt-10 text-center text-sm text-gray-500'>
-          Üye misiniz ?{' '}
-          <a
-            href='#'
-            className='font-semibold leading-6 text-indigo-600 hover:text-indigo-500'
-          >
-            14 günlük ücretsiz deneme başlatın
-          </a>
-        </p>
+        <Footer/>
       </div>
     </div>
   )
